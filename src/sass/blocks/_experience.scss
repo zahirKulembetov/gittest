@@ -1,0 +1,77 @@
+.experience {
+   padding-top: 126px;
+   &__wrapper {
+      margin-top: 85px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 136px;
+   }
+   &__column {
+      padding-left: 115px;
+      ul {
+         list-style-type: none;
+         margin-bottom: 0;
+      }
+      li {
+         position: relative;
+         &::before {
+            position: absolute;
+            content: "";
+            top: -53px;
+            left: -43px;
+            width: 1px;
+            height: calc(100% + 45px);
+            background-color: #000;
+         }
+      }
+      &_title {
+         position: relative;
+         @include before-circle;
+         &::before {
+            top: 25%;
+            left: -50px;
+            width: 15px;
+            height: 15px;
+         }
+      }
+   }
+   &__item {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      &-head {
+         position: relative;
+         margin-top: 45px;
+         display: flex;
+         justify-content: flex-start;
+         align-items: start;
+         &::before {
+            position: absolute;
+            content: "";
+            top: 17px;
+            left: -42px;
+            width: 42px;
+            height: 1px;
+            background-color: #000000;
+         }
+      }
+      &-icon {
+         margin: 14px 0 0 17px;
+         position: relative;
+         @include before-circle;
+         &::before {
+            top: -14px;
+            left: -17px;
+         }
+      }
+      &-title {
+         margin-bottom: 0;
+      }
+      &-text {
+         margin-left: 20px;
+      }
+      &-body {
+         margin-top: 12px;
+      }
+   }
+}

@@ -1,0 +1,27 @@
+@mixin before-circle {
+   &::before {
+      content: "";
+      position: absolute;
+      top: -25%;
+      left: 0px;
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      background: $main-color;
+      z-index: -1;
+   }
+}
+
+@mixin before-line {
+   &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: $main-color;
+      z-index: -1;
+   }
+}

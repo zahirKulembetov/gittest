@@ -1,0 +1,33 @@
+@import "libs/bootstrap-reboot.min";
+@import "base/variables";
+@import "base/mixins";
+
+* {
+   font-family: Montserrat, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   width: 1140px;
+   margin: 0 auto;
+}
+
+.divider {
+   position: relative;
+   @include before-line;
+}
+
+@import "blocks/left-block";
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/button";
+@import "blocks/about-me";
+@import "blocks/hamburger";
+@import "blocks/overview";
+@import "blocks/experience";
+@import "blocks/skills";
+@import "blocks/portfolio";
+@import "blocks/price-list";
+@import "blocks/contacts";
+@import "blocks/media";
